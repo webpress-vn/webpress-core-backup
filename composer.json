@@ -1,0 +1,72 @@
+{
+    "name": "webpress/framework",
+    "description": "A Package With All Webpress Package",
+    "authors": [
+        {
+            "name": "sonhaichu",
+            "email": "sonhaichu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "VCComponent\\Laravel\\Framework\\": "src/app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VCComponent\\Laravel\\Framework\\Test": "tests/"
+        }
+    },
+    "require": {
+        "webpress/analytics": "^0.0",
+        "webpress/category-manager": "^0.0",
+        "webpress/comment-manager": "^0.0",
+        "webpress/configuration": "^0.2",
+        "webpress/contact-manager": "^0.0",
+        "webpress/core": "^0.1",
+        "webpress/dynamic": "^1.0",
+        "webpress/media-manager": "^1.0",
+        "webpress/menu-manager": "^0.1",
+        "webpress/order-manager": "^0.1",
+        "webpress/payment": "^0.0",
+        "webpress/post-manager": "^0.1",
+        "webpress/product-manager": "^0.1",
+        "webpress/script-manager": "^0.0",
+        "webpress/search": "^0.0",
+        "webpress/seo": "^0.0",
+        "webpress/sitemap": "^0.0",
+        "webpress/tag-manager": "^0.0",
+        "webpress/user-manager": "^0.0",
+        "webpress/utility": "^0.0",
+        "webpress/view-model": "^0.0",
+        "webpress/site-protection":"^0.0",
+        "webpress/redirector":"^0.0",
+        "webpress/static-file":"^0.0",
+        "webpress/export-excel":"^0.0",
+        "webpress/language":"^0.0",
+        "webpress/dynamic-contact-form":"^0.0",
+        "webpress/email-config": "^0.0"
+    },
+    "require-dev": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+            ]
+        }
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit --color=always"
+        ],
+        "test:watch": [
+            "vendor/bin/phpunit-watcher watch"
+        ],
+        "coverage": [
+            "vendor/bin/phpunit --coverage-html coverages"
+        ]
+    }
+}
